@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Algoritmusok beadandó</title>
 
-  <style>
+    <style>
     body {
       margin: 0;
       padding: 0;
@@ -69,6 +69,39 @@
       text-decoration: underline;
     }
 
+    .badges {
+      margin: 10px 0 15px 0;
+    }
+
+    .diff, .type {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    .easy {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .medium {
+      background-color: #FF9800;
+      color: white;
+    }
+
+    .hard {
+      background-color: #F44336;
+      color: white;
+    }
+
+    .type {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #e0e0e0;
+    }
+
     footer {
       text-align: center;
       margin-top: 50px;
@@ -76,6 +109,7 @@
       opacity: 0.7;
       color: #cccccc;
     }
+
   </style>
 </head>
 
@@ -91,6 +125,12 @@
 
     <div class="task">
       <h3>1. Components in a graph</h3>
+
+      <div class="badges">
+        <span class="diff hard">Közepes</span>
+        <span class="type">Gráf algoritmus</span>
+      </div>
+
       <p><strong>Feladat linkje:</strong> <a href="https://www.hackerrank.com/challenges/components-in-graph/problem" target="_blank">link</a></p>
       <p><strong>Megoldásom:</strong> <a href="https://gist.github.com/inerbd/fc5e5c4705a9467f878a21a5244edd72" target="_blank">forráskód</a></p>
     </div>
