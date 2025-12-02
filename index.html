@@ -46,6 +46,7 @@
       color: #ffffff;
     }
 
+    /* ---- Task Box ---- */
     .task {
       background: rgba(255, 255, 255, 0.08);
       padding: 18px 22px;
@@ -54,8 +55,16 @@
       border-left: 5px solid #3d7aff;
     }
 
-    .task h3 {
-      margin-top: 0;
+    /* ---- One-line title + badges ---- */
+    .task-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .task-header h3 {
+      margin: 0;
       color: #ffffff;
     }
 
@@ -69,8 +78,10 @@
       text-decoration: underline;
     }
 
+    /* ---- Badge-ek ---- */
     .badges {
-      margin: 10px 0 15px 0;
+      display: flex;
+      gap: 8px;
     }
 
     .diff, .type {
@@ -79,7 +90,6 @@
       border-radius: 6px;
       font-size: 0.85rem;
       font-weight: bold;
-      margin-right: 6px;
     }
 
     .easy {
@@ -124,11 +134,12 @@
     <h2>Megoldott feladatok</h2>
 
     <div class="task">
-      <h3>1. Components in a graph</h3>
-
-      <div class="badges">
-        <span class="diff medium">Közepes</span>
-        <span class="type">Gráf algoritmus</span>
+      <div class="task-header">
+        <h3>1. Components in a graph</h3>
+        <div class="badges">
+          <span class="diff medium">Közepes</span>
+          <span class="type">Gráf algoritmus</span>
+        </div>
       </div>
 
       <p><strong>Feladat linkje:</strong> <a href="https://www.hackerrank.com/challenges/components-in-graph/problem" target="_blank">link</a></p>
@@ -136,11 +147,12 @@
     </div>
 
     <div class="task">
-      <h3>2. Play with words</h3>
-
-      <div class="badges">
-        <span class="diff medium">Közepes</span>
-        <span class="type">Dinamikus programozás</span>
+      <div class="task-header">
+        <h3>2. Play with words</h3>
+        <div class="badges">
+          <span class="diff medium">Közepes</span>
+          <span class="type">Dinamikus programozás</span>
+        </div>
       </div>
 
       
@@ -149,11 +161,12 @@
     </div>
 
     <div class="task">
-      <h3>3. Mark and Toys</h3>
-
-      <div class="badges">
-        <span class="diff easy">Könnyű</span>
-        <span class="type">Rendezés, mohó </span>
+      <div class="task-header">
+        <h3>3. Mark and Toys</h3>
+        <div class="badges">
+          <span class="diff easy">Könnyű</span>
+          <span class="type">Rendezés, mohó</span>
+        </div>
       </div>
       
       <p><strong>Feladat linkje:</strong> <a href="https://www.hackerrank.com/challenges/mark-and-toys/problem" target="_blank">link</a></p>
@@ -161,14 +174,13 @@
     </div>
 
   <div class="task">
-      <h3>4. Maximum Perimeter Triangle</h3>
-
-
-    <div class="badges">
-        <span class="diff easy">Könnyű</span>
-        <span class="type">Rendezés, mohó</span>
+      <div class="task-header">
+        <h3>4. Maximum Perimeter Triangle</h3>
+        <div class="badges">
+          <span class="diff easy">Könnyű</span>
+          <span class="type">Rendezés, mohó</span>
+        </div>
       </div>
-
     
       <p><strong>Feladat linkje:</strong> <a href="https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem" target="_blank">link</a></p>
       <p><strong>Megoldásom:</strong> <a href="https://gist.github.com/inerbd/213c12a5558cbadfa3444b869208c509" target="_blank">forráskód</a></p>
